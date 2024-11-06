@@ -75,7 +75,7 @@ a:visited{
     color: #ffffff;
 }
 
-button{
+.button{
     z-index: 1;
     position: fixed;
     bottom: 15px;
