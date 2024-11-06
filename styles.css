@@ -1,0 +1,302 @@
+@import url(https://fonts.googleapis.com/css2?family=Habibi&family=Irish+Grover&display=swap);
+
+:root{
+Green: #06A816;
+Orange: #E75D02;
+Black: #000000;
+White: #ffffff;
+}
+
+body{
+    font-family: 'Habibi'; 
+    margin: 0;
+}
+
+header{
+    align-items: center;
+    background-color: #06A816;
+    color: #ffffff;
+    text-align: center;
+}
+
+h1{
+    display: block;
+    font-family: 'Irish Grover';
+    font-size: 2.5em;
+    text-shadow: 1px 1px #000000;
+    margin: 0; 
+}
+
+h2{
+    font-family: 'Irish Grover';
+    font-size: 1.75em;
+   margin: 0;
+}
+
+h3{
+    font-family: 'Irish Grover';
+    font-size: 1.25em;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+nav li{
+    list-style: none;
+    width: 250px;
+}
+
+nav a{
+    text-decoration: none;
+    background-color: #E75D02;
+    display: block;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+nav ul {
+    display: grid;
+    width: fit-content;
+    padding: 0;
+    margin: 15px auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+button{
+    z-index: 1;
+    position: fixed;
+    bottom: 15px;
+    right: 23px;
+    background-color: #E75D02;
+    color: #ffffff;
+    height: 30px;
+    border-width: thin;
+    border-color: #ffffff;
+    border-radius: 5px;
+}
+
+main{
+    padding: 20px;
+}
+
+#Fruit{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+#Vegetables{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.nameF{
+    position: relative;
+    text-align: center;
+    top: -150px;
+    left: 100px;
+    background-color: #000000;
+    opacity: 0.6;
+    color: #ffffff;
+    width: 85px;
+    padding: 10px;
+}
+
+.nameV{
+    position: relative;
+    text-align: center;
+    top: -150px;
+    left: 100px;
+    background-color: #000000;
+    opacity: 0.6;
+    color: #ffffff;
+    width: 85px;
+    padding: 10px;   
+}
+
+footer{
+    display: grid;
+    background-color: #06A816;
+    color: #ffffff;
+    text-align: center;
+}
+
+footer ul{
+    list-style-type: none;
+    margin: 5px;
+}
+
+footer p{
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+small{
+    background-color: #ffffff;
+    color: #06A816;
+    padding: 8px;
+}
+
+@media screen and (min-width: 428px) {
+    nav{
+        display: flex;
+        justify-content: center;
+        background-color: #ffffff;
+    }  
+}
+
+@media screen and (min-width: 834px) {
+    #Fruit{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 100px;
+        row-gap: 20px;
+    }
+
+    #Vegetables{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 100px;
+        row-gap: 20px;
+    }
+
+    h3{
+        text-align: center;
+    }
+
+    #info{
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 10px;
+        padding-top:30px ;
+    }
+
+    nav ul{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 40px;
+    }
+
+    nav li{
+        width: 300px;
+    }
+
+    .hh{
+        display: inline-block;
+        padding: 10px;
+        align-items: center;
+    }
+
+    .hhh{
+        display: flex;
+        justify-content: space-between;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .info{
+        display: flex;
+        padding-left: 200px;
+        padding-right: 200px;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        justify-content: space-between;
+    }
+
+}
+
+@media screen and (min-width: 1280px) {
+    #Fruit{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 100px;
+        row-gap: 20px;
+    }
+
+    #Vegetables{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 100px;
+        row-gap: 20px;
+    }
+
+    nav{
+        display: inline-block;
+        background-color: #06A816;
+    }
+
+    nav li{
+        border-color: #ffffff;
+        border-width: thin;
+    }
+
+    .hhh{
+        display: inline-block;
+    }
+
+    .ah{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 100px;
+        justify-content: space-between;
+    }
+
+    nav{
+        float: right;
+        margin: 5px;
+        margin-right: 10px;
+    }
+
+}
+
+@media screen and (min-width: 1440px){
+    #Fruit{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+
+    #Vegetables{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+
+    .hh{
+        margin: 0;
+        padding: 0;
+    }
+
+    .hhh{
+        width: 500px;
+        float: left;
+        text-align: left;
+    }
+
+    header{
+        height: 90px;
+    }
+
+    .ah{
+        gap: 150px;
+    }
+
+    nav{
+        margin: 10px;
+    }
+
+}
